@@ -13,7 +13,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0078D4 0%, #50E6FF 100%);
             min-height: 100vh;
             padding: 20px;
         }
@@ -32,8 +32,13 @@
             text-align: center;
         }
 
+        .logo {
+            height: 50px;
+            margin-bottom: 15px;
+        }
+
         h1 {
-            color: #667eea;
+            color: #0078D4;
             font-size: 2.5em;
             margin-bottom: 10px;
         }
@@ -62,7 +67,7 @@
         }
 
         .card h2 {
-            color: #764ba2;
+            color: #0078D4;
             margin-bottom: 20px;
             font-size: 1.5em;
             display: flex;
@@ -84,7 +89,7 @@
 
         textarea:focus {
             outline: none;
-            border-color: #667eea;
+            border-color: #0078D4;
         }
 
         .examples {
@@ -96,9 +101,9 @@
 
         .example-btn {
             padding: 8px 15px;
-            border: 2px solid #667eea;
+            border: 2px solid #0078D4;
             background: white;
-            color: #667eea;
+            color: #0078D4;
             border-radius: 20px;
             cursor: pointer;
             font-size: 0.9em;
@@ -106,14 +111,14 @@
         }
 
         .example-btn:hover {
-            background: #667eea;
+            background: #0078D4;
             color: white;
         }
 
         .analyze-btn {
             width: 100%;
             padding: 15px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0078D4 0%, #50E6FF 100%);
             color: white;
             border: none;
             border-radius: 10px;
@@ -142,12 +147,12 @@
 
         .spinner {
             border: 4px solid #f3f3f3;
-            border-top: 4px solid #667eea;
+            border-top: 4px solid #0078D4;
             border-radius: 50%;
             width: 40px;
             height: 40px;
             animation: spin 1s linear infinite;
-            margin: 0 auto 15px;
+            margin: 20px auto;
         }
 
         @keyframes spin {
@@ -167,7 +172,7 @@
         }
 
         .metric {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0078D4 0%, #50E6FF 100%);
             color: white;
             padding: 20px;
             border-radius: 10px;
@@ -201,7 +206,7 @@
         }
 
         .service-card h4 {
-            color: #667eea;
+            color: #0078D4;
             margin-bottom: 10px;
         }
 
@@ -243,7 +248,7 @@
 
         .bar-fill {
             height: 100%;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0078D4 0%, #50E6FF 100%);
             border-radius: 15px;
             transition: width 1s ease;
             display: flex;
@@ -271,7 +276,7 @@
         }
 
         .agent.active {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0078D4 0%, #50E6FF 100%);
             color: white;
             transform: scale(1.05);
         }
@@ -305,6 +310,12 @@
 <body>
     <div class="container">
         <header>
+            <svg class="logo" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0" y="0" width="10.67" height="10.67" fill="#F25022"/>
+                <rect x="12.33" y="0" width="10.67" height="10.67" fill="#7FBA00"/>
+                <rect x="0" y="12.33" width="10.67" height="10.67" fill="#00A4EF"/>
+                <rect x="12.33" y="12.33" width="10.67" height="10.67" fill="#FFB900"/>
+            </svg>
             <h1>🏗️ Specialist Pricing Assistant</h1>
             <p class="subtitle">AI-Powered Multi-Agent System for Azure Pricing</p>
         </header>
